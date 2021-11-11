@@ -22,18 +22,36 @@ a{
 
 /* header */
 .logo{
-    background: cadetblue;
+    height: 76px;
 }
 .logo a img {
     width: 13%;
+    margin: 10px 0;
 }
 .menu ul li a {
     font-family: 'Pretendard-Regular';
     font-size: 1.3rem;
     line-height: 76px;
     display: block;
-    background: blueviolet;
 }
 .menu ul li:hover {
     color: blue;
+}
+
+
+/* header end */
+
+/* section 01 */
+.main-sec{
+    position: relative;
+}
+.main-sec  img{
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+}
+.text-img{
+    position: absolute;
+    flex-direction: column;
+    z-index: 999;
 }
