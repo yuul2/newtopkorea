@@ -22,20 +22,25 @@ a{
 
 /* header */
 .logo{
-    height: 76px;
+    height: 50px;
 }
-.logo a img {
-    width: 13%;
-    margin: 10px 0;
+.logo a{
+    font-family: 'Pretendard-Regular';
+    font-size: 1.3rem;
+    line-height: 50px;
+    display: block; 
 }
 .menu ul li a {
     font-family: 'Pretendard-Regular';
     font-size: 1.3rem;
-    line-height: 76px;
+    line-height: 50px;
     display: block;
 }
 .menu ul li:hover {
     color: blue;
+}
+.pd-none{
+    padding-bottom: 0 !important;
 }
 
 
@@ -43,15 +48,26 @@ a{
 
 /* section 01 */
 .main-sec{
+    width: 100%;
     position: relative;
 }
-.main-sec  img{
-    width: 100%;
+.back-img{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
+    height: 100vh;
+}
+.main-sec{
+    width: 100%;
+    position: relative;
     z-index: -99;
 }
 .text-img{
     position: absolute;
     flex-direction: column;
     z-index: 999;
+   right: -50%;
+   top: -50%;
 }
