@@ -1,0 +1,49 @@
+.g-0{
+    margin: 0;
+    padding: 0;
+}
+.img-box img{
+  width: 100%;
+  /* position: absolute; */
+}
+.absolute-banner{
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+}
+.text-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+.text-box img{
+    width: 45%;
+}
+.text-box .text-img2{
+    transform:translate(58%,-185%) ;
+}
+.text-box .text-img1{
+    transform: translate(58%,-70%) !important;
+}
+
+.subject_tit{
+    width: 100%;
+    padding: 0 0 5%;
+}
+.subject_tit img{
+    width: 100%;
+}
+.subject_cur{
+    width: 100%;
+}
+.subject_cur img{
+    width: 100%;
+}
+
+.pd-10{
+    padding: 10% 0;
+}

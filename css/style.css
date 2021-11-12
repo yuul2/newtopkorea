@@ -1,3 +1,5 @@
+@import url(../css/newstyle.css);
+
 body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #fff;
@@ -65,10 +67,6 @@ a {
     right: 0px; }
   .site-navbar .site-logo {
     position: absolute;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    line-height: 0;
     margin: 0;
     padding: 0;
     z-index: 3; }
