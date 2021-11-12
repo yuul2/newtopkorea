@@ -1,73 +1,63 @@
-/* reset css */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url(../css/responsive.css);
 *{
-    margin: 0;
-    padding: 0;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none !important ;
-    color: inherit !important;
-}
-/* reset css */
-/* font source */
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-/* font source */
-
-/* header */
-.logo{
-    height: 50px;
-}
-.logo a{
-    font-family: 'Pretendard-Regular';
-    font-size: 1.3rem;
-    line-height: 50px;
-    display: block; 
-}
-.menu ul li a {
-    font-family: 'Pretendard-Regular';
-    font-size: 1.3rem;
-    line-height: 50px;
-    display: block;
-}
-.menu ul li:hover {
-    color: blue;
-}
-.pd-none{
-    padding-bottom: 0 !important;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
+nav{
+  background: #171c24;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 100px;
+}
+nav .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+nav .nav-items{
+  display: flex;
+  padding: 0 0 0 40px;
+}
+nav .nav-items li{
+  list-style: none;
+  padding: 0 15px;
+}
+nav .nav-items li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .nav-items li a:hover{
+  color: #26d63b;
+}
+nav .menu-icon,
+nav .cancel-icon,
+nav .search-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-icon span,
+nav .cancel-icon,
+nav .search-icon{
+  display: none;
+}
 
-/* header end */
-
-/* section 01 */
-.main-sec{
+/* section01 */
+.section1 img{
     width: 100%;
-    position: relative;
-}
-.back-img{
-    background-image: url(../img/banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    height: 100vh;
-}
-.main-sec{
-    width: 100%;
-    position: relative;
-    z-index: -99;
-}
-.text-img{
-    position: absolute;
-    flex-direction: column;
-    z-index: 999;
-   right: -50%;
-   top: -50%;
 }
