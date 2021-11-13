@@ -182,16 +182,16 @@
             <fieldset>
               <div class="qna_name">
                 <label for="name" style="font-size: 2rem;">이름</label>
-                <input type="text" placeholder="이름">
+                <input type="text" name="name" placeholder="이름" required="required">
               </div>
               <div class="school_grade d-flex">
                 <div class="school_name">
                   <label for="school" style="font-size: 2rem;">학교이름</label>
-                  <input type="text" placeholder="학교이름  ex)OO중">
+                  <input type="text" name="school" placeholder="학교이름  ex)OO중" required="required">
                 </div>
                 <div class="grade_type">
                   <label for="grade" style="font-size: 2rem;">학년</label>
-                  <select name="grade" id="grade_ty">
+                  <select name="grade" name="grade" id="grade_ty">
                     <option value="">학년선택</option>
                     <option value="초3">초3</option>
                     <option value="초4">초4</option>
@@ -208,11 +208,11 @@
               </div>
               <div class="want_subject">
                 <label for="subject" style="font-size: 2rem;">수강 희망 과목</label>
-                <input type="text" placeholder="국어/영어/수학/과학">
+                <input type="text" name="subject" placeholder="국어/영어/수학/과학" required="required">
               </div>
               <div class="phone_no">
-                <label for="number" style="font-size: 2rem;">연락처</label>
-                <input type="number" placeholder="연락받으실 전화번호 입력">
+                <label for="tel" style="font-size: 2rem;">연락처</label>
+                <input type="text" name="tel" required="required" pattern=".{11,}" title="숫자 11자리를 입력해주세요" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
               </div>
               <div class="send_btn">
                 <button type="submit">문의하기</button>
