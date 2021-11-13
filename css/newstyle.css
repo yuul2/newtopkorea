@@ -2,37 +2,23 @@
     margin: 0;
     padding: 0;
 }
+.pd-10{
+    padding: 10% 0;
+}
+
+/* main_banner */
 .img-box img{
   width: 100%;
-  /* position: absolute; */
 }
 .absolute-banner{
-    position: relative;
     width: 100%;
-    /* height: 100vh; */
 }
-.text-box{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%,-50%);
-}
-.text-box img{
-    width: 45%;
-}
-.text-box .text-img2{
-    transform:translate(58%,-185%) ;
-}
-.text-box .text-img1{
-    transform: translate(58%,-70%) !important;
-}
+
+/* section_01 */
 
 .subject_tit{
     width: 100%;
-    padding: 0 0 5%;
+    padding: 0 0 10%;
 }
 .subject_tit img{
     width: 100%;
@@ -49,6 +35,21 @@
     width: 100%;
 }
 
-.pd-10{
-    padding: 10% 0;
+/* section_02 */
+
+.grade_tit img{
+    width: 100%;
+    padding: 0 0 15%;
 }
+.grade_teach img{
+    width:100%;
+    padding-bottom: 5%;
+}
+.grade_teach{
+    width: 100%;
+    background: rgb(255, 255, 9);
+    border-radius: 10px;
+    padding: 5% 5% 0% 5%;
+}
+
+/* qna section */

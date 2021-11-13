@@ -122,15 +122,14 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 g-0 absolute-banner">
-          <div class="img-box">
+        <div class="col-12 g-0">
+          <div class="img-box" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="1000"
+          data-aos-offset="0" data-aos-duration="800">
             <img src="images/banner.png" alt="banner">
           </div>
-          <div class="text-box">
-            <img src="images/11.png" class="text-img1" alt="text-banner">
-            <img src="images/22.png" class="text-img2" alt="text-banner">
           </div>
-        </div>
       </div>
 
     </div>
@@ -143,19 +142,91 @@
           <div class="subject_tit" data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500">
-            <img src="images/subject_title.png" alt="">
+            <img src="images/subject_title.png" alt="subject_banner">
           </div>
           <div class="subject_cur" data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="3000">
-            <img src="images/subject_cur.png" alt="">
+            <img src="images/subject_cur.png" alt="subject_banner">
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-primary">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 pd-10">
+          <div class="grade_tit">
+            <img src="images/teacher.png" alt="teacher_banner">
+          </div>
+          <div class="grade_teach">
+            <img src="images/element.png" alt="">
+            <img src="images/middle.png" alt="">
+            <img src="images/high.png" alt="">
           </div>
         </div>
         <div class="col-2"></div>
       </div>
     </div>
   
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="qna_tit text-center">
+            <h1> 상담 문의 하기</h1>
+          </div>
+           <form action="">
+            <fieldset>
+              <div class="qna_name">
+                <label for="name" style="font-size: 2rem;">이름</label>
+                <input type="text" placeholder="이름">
+              </div>
+              <div class="school_grade d-flex">
+                <div class="school_name">
+                  <label for="school" style="font-size: 2rem;">학교이름</label>
+                  <input type="text" placeholder="학교이름  ex)OO중">
+                </div>
+                <div class="grade_type">
+                  <label for="grade" style="font-size: 2rem;">학년</label>
+                  <select name="grade" id="grade_ty">
+                    <option value="">학년선택</option>
+                    <option value="초3">초3</option>
+                    <option value="초4">초4</option>
+                    <option value="초5">초5</option>
+                    <option value="초6">초6</option>
+                    <option value="중1">중1</option>
+                    <option value="중2">중2</option>
+                    <option value="중3">중3</option>
+                    <option value="고1">고1</option>
+                    <option value="고2">고2</option>
+                    <option value="고3">고3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="want_subject">
+                <label for="subject" style="font-size: 2rem;">수강 희망 과목</label>
+                <input type="text" placeholder="국어/영어/수학/과학">
+              </div>
+              <div class="phone_no">
+                <label for="number" style="font-size: 2rem;">연락처</label>
+                <input type="number" placeholder="연락받으실 전화번호 입력">
+              </div>
+              <div class="send_btn">
+                <button type="submit">문의하기</button>
+              </div>
+            </fieldset>
 
+           </form>
+      
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      
+    </div>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
