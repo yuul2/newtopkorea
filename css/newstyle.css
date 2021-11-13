@@ -40,6 +40,11 @@
 .subject_cur{
     width: 100%;
 }
+@media (max-width:991px){
+    .subject_tit{
+        max-width: 100%;
+    }
+}
 .subject_cur img{
     width: 100%;
 }
