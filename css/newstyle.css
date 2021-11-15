@@ -26,14 +26,12 @@
 .subject_cur{
     width: 100%;
 }
-@media (max-width:991px){
-    .subject_tit{
-        max-width: 100%;
-    }
-}
+
 .subject_cur img{
     width: 100%;
 }
+
+
 
 /* section_02 */
 
@@ -53,10 +51,84 @@
 }
 
 /* qna section */
+.qna_tit span{
+    width: 30px;
+    height: 5px;
+    background: #333;
+}
+.qna_tit h1{
+    font-weight: 700 !important;
+}
 
-.btn_bix{
+.qna_name{
+    font-size: 1.25rem;
+    font-weight: 600 !important;
+    padding: 1% 0;
+}
+
+.school_grade .school_name{
+    font-size: 1.25rem;
+    font-weight: 600 !important;
+    padding: 1% 0;
+}
+
+.school_grade .grade_type{
+    font-size: 1.25rem;
+    font-weight: 600 !important;
+    padding: 1% 0;
+}
+
+.want_subject{
+    font-size: 1.25rem;
+    font-weight: 600 !important;
+    padding: 1% 0;
+}
+
+.phone_no{
+    font-size: 1.25rem;
+    font-weight: 600 !important;
+    padding: 1% 0;
+}
+
+.qna_section input[type="text"]{
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    padding: .8rem .9rem;
+    border-radius: 30px;
+    border: 2px solid #8ab8d6 !important;  
+    outline: none;/* 포커스시 발생하는 효과 제거를 원한다면 */ 
+    -webkit-appearance: none;   /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+}
+.qna_section input:focus{
+    background: #8ab8d6;
+    border: none !important;
+    color: white;
+}
+.qna_section select{
+    width: 100%;
+    font-size: 1.25rem;
+    padding: .8rem .9rem;
+    line-height: 1.25rem;
+    border-radius: 30px;
+    border: 2px solid #8ab8d6 !important;
+    /* -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    
+}
+.qna_section select:focus{
+    background: #8ab8d6;
+    border: none !important;
+    color: white;
+}
+
+/* thankyou_message seection */
+/* .btn_box{
     width: 100%;
     margin-top: 20px;
-}
+} */
 
 
