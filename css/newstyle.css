@@ -10,9 +10,10 @@
 .img-box img{
   width: 100%;
 }
-.absolute-banner{
+/* .absolute-banner{
     width: 100%;
-}
+} */
+
 
 /* section_01 */
 
@@ -30,8 +31,12 @@
 .subject_cur img{
     width: 100%;
 }
-
-
+@media (max-width:767px) {
+    .m-pd10{
+        padding: 0 20px;
+    }
+    
+}
 
 /* section_02 */
 
@@ -41,7 +46,7 @@
 }
 .grade_teach img{
     width:100%;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 12px 12px 15px rgb(197, 197, 197);
 }
 .element, .middle, .high{
     padding-bottom: 5%;
@@ -51,7 +56,80 @@
     border-radius: 10px;
     padding: 5% 5% 0% 5%;
 }
+/* section 03 */
+.sad-bg{
+    background-image: url(../images/6-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sad-bg img{
+    width: 100%;
+    padding:8.5rem;
+}
+@media (max-width:767px){
+    .sad-bg img{
+        padding: 2.188rem 0;
+    } 
+}
+/* section04 */
 
+.stop-fast-t img{
+    width: 100%;
+}
+.stop-fast-i img{
+    width: 100%;
+}
+
+/* section 05 */
+.mobile-block{
+    display: none;
+}
+@media (max-width:767px){
+    .mobile-block{
+        display: block;
+    }
+    .mobile-block img{
+        width: 100%;
+    }
+    .web-block{
+        display: none;
+    }
+    
+    .m-pd30 {
+    padding: 0 30px;
+}
+}
+
+/* section 06 */
+.section6 img{
+    width: 100%;
+}
+@media (max-width: 767px){
+    .section6 .angry{
+        padding: 0 30px;
+    }
+}
+/* section 07 */
+.section7 img{
+    width: 100%;
+}
+.section7 .fast-study-content{
+    padding: 3rem 5rem 0;
+}
+@media(max-width:767px){
+    .section7 .fast-study-content{
+        padding: 3rem 3rem 0;
+    }
+}
+/* section 08 */
+.section8 .notice-content img{
+    width: 100%;
+}
+@media(max-width:767px){
+    .section8 .notice-content{
+        padding: 0 20px;
+    }
+}
 /* qna section */
 .qna_tit span{
     width: 30px;
@@ -142,8 +220,6 @@ select::-ms-expand {
     height: 55px;
     text-align:center;
     border: none;
-
-
     border-radius: 50px;
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -164,7 +240,26 @@ select::-ms-expand {
     background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
-
+@media (max-width:767px){
+    .m-pd40{
+        padding: 40px;
+    }
+}
+@media(max-width:580px){
+    .qna_tit h1{
+       font-size: 2rem;
+    }
+}
+@media (max-width:320px){
+    .send_btn button{
+        /* background-size: 300% 100%; */
+        margin: 0px;
+    }
+    .qna_tit h1{
+        font-weight: 2rem !important;
+    }
+    
+}
 /* thankyou_message seection */
 .btn_box{
     width: 100%;
