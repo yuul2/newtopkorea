@@ -41,11 +41,13 @@
 }
 .grade_teach img{
     width:100%;
+    box-shadow: 10px 10px 5px grey;
+}
+.element, .middle, .high{
     padding-bottom: 5%;
 }
 .grade_teach{
     width: 100%;
-    background: rgb(255, 255, 9);
     border-radius: 10px;
     padding: 5% 5% 0% 5%;
 }
@@ -116,19 +118,94 @@
     /* -o-appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none; */
-    
+    appearance: none;
+     */
+}
+select::-ms-expand {
+    display: none;
 }
 .qna_section select:focus{
     background: #8ab8d6;
     border: none !important;
     color: white;
 }
+.send_btn{
+    padding-top: 2.5rem;
+}
+.send_btn button{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-size: 300% 100%;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:focus {
+    outline: none;
+}.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
 
 /* thankyou_message seection */
-/* .btn_box{
+.btn_box{
     width: 100%;
-    margin-top: 20px;
-} */
+    margin-top: 2.25rem;
+    text-align: center;
+}
+.commbtn{
+    width: 100%;
+    font-size: 1.2rem;
+    color: black;
+}
 
+.thankyou_message{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+    display: none;
+}
+.thankyou_message section{
+    width: 34.375rem;
+    margin: 10% auto;
+    padding: 4.25rem;
+    border-radius: 0.133rem;
+    background: #fff;
+
+}
+.thankyou_message section h1{
+    color: #59c3c3;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #3c4147;
+    text-align: center;
+}
+.thankyou_message section p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: black;
+}
 
