@@ -39,7 +39,11 @@
 }
 
 /* section_02 */
-
+.bg-stripe{
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .grade_tit img{
     width: 100%;
     padding: 0 0 5%;
