@@ -5,7 +5,19 @@
 .pd-10{
     padding: 10% 0;
 }
+.pd-8{
+    padding: 8% 0;
+}
+.pt-8{
+    padding-top: 8%;
+}
+.pt-20{
+    padding-top: 20%;
+}
 
+.pd-2010{
+    padding: 20% 0 10%;
+}
 /* main_banner */
 .img-box img{
   width: 100%;
@@ -14,6 +26,9 @@
     width: 100%;
 } */
 
+.bg-lblue{
+    background: #f0f2f7;
+}
 
 /* section_01 */
 
@@ -61,14 +76,13 @@
     padding: 5% 5% 0% 5%;
 }
 /* section 03 */
-.sad-bg{
+/* .sad-bg{
     background-image: url(../images/6-3.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.sad-bg img{
+} */
+.section04img img:last-child{
     width: 100%;
-    padding:8.5rem;
 }
 @media (max-width:767px){
     .sad-bg img{
