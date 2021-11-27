@@ -134,15 +134,59 @@
         </div>
 
       </header>
+      <!-- floating menu -->
+      <!-- <div class="cotainer-fluid">
+        <div class="row g-0 relative">
+         <div class="col-sm-12 floating ">
+           <a href="tel:02-3472-3479"><img src="images/phone.png" alt=""></a>
+           
+         </div>
+        </div>
+      </div> -->
+      <div class="container-fluid pd-001">
+          <div class="row g-0">
+              <div class="col-12 g-0 relative">
+                  <div class="main-banner relative">
+                      <div class="absolute-text ">
+                        <div class="box-deco d-flex"></div>
+                        <h2 class="font-barun25">시설안내 및 오시는길</h2>
+                      </div>
+                  </div>
+                  <div class="overlaybg"></div>
+                 
+              </div>
+             
+      </div>
 
       <div class="container-fluid">
-          <div class="row">
+          <div class="row g-0">
               <div class="col-sm-2"></div>
-              <div class="col-md-8">
-                  
+              <div class="col-sm-8 pd-10">
+                  <div class="academy-inter-tit">
+                    <h1 class="text-center font-barun25bk">학원 시설</h1>  
+                </div>
               </div>
               <div class="col-sm-2"></div>
-              
+          </div>
+      </div>
+
+      <div class="container-fluid">
+          <div class="row g-0">
+            <div class="col-sm-2"></div>
+            <div class="col-md-8">
+                <div class="head-title">
+                    <h3 class="font-barun25bk text-center">오시는길</h3>
+                </div>
+                <div class="col-6 vehicle">
+                    <img src="images/vehicle.png" alt="">
+                </div>
+                <div class="col-6 map-wrap">
+                    <div id="staticMap"></div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+
+          </div>
       </div>
 
 
@@ -196,11 +240,33 @@
         </div>
       </div>
 
+      <script src="js/yuul.js"></script>
+      <script src="js/map.js"></script>
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bd75916a3351a89d4f41af0255a84159">
+          // 이미지 지도에서 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.488360555432514, 127.00854038465968); 
+
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커는 Object 형태입니다
+var marker = {
+    position: markerPosition
+};
+
+var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div  
+    staticMapOption = { 
+        center: new kakao.maps.LatLng(37.488360555432514, 127.00854038465968), // 이미지 지도의 중심좌표
+        level: 3, // 이미지 지도의 확대 레벨
+        marker: marker // 이미지 지도에 표시할 마커 
+    };    
+
+// 이미지 지도를 생성합니다
+var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+      </script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/yuul.js"></script>
 
     <script>
       AOS.init();
     </script>
+
       </body>
