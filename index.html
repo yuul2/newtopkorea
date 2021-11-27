@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon css -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -81,8 +83,8 @@
               <nav class="site-navigation text-right ml-auto " role="navigation">
 
                 <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                  <li><a href="#home-section" class="nav-link">학원소개</a></li>
-                  <li><a href="#services-section" class="nav-link">오시는길</a></li>
+                  <li><a href="index.html" class="nav-link font-nanum600" id="nav-hover">학원소개</a></li>
+                  <li><a href="address.html" class="nav-link font-nanum600" id="nav-hover">오시는길</a></li>
 
 
                   <!-- <li class="has-children">
@@ -102,7 +104,8 @@
                     </ul>
                   </li> -->
 
-                  <li><a href="#qna_section" class="nav-link">문의하기</a></li>
+                  <li><a href="index.html#qna_section" class="nav-link font-nanum600" id="nav-hover">문의하기</a></li>
+                  <li><a href="https://blog.naver.com/newtopkorea" class="nav-link font-nanum600" id="nav-hover">블로그 <i class="xi-naver-square naver-icon"></i></a></li>
 
                   <!-- <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li> -->
                   <!-- <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
@@ -117,10 +120,22 @@
         </div>
 
       </header>
+     
+
 
       <!-- header -->
 
-    <div class="container-fluid">
+      <!-- floting menu section -->
+      <div class="cotainer-fluid">
+        <div class="row g-0 relative">
+         <div class="col-sm-12 floating ">
+           <a href="tel:02-3472-3479"><img src="images/phone.png" alt=""></a>
+           
+         </div>
+        </div>
+      </div>
+      <!-- homesection -->
+    <div class="container-fluid" id="home-section" >
       <div class="row">
         <div class="col-12 g-0">
           <div class="img-box" data-aos="fade-zoom-in"
@@ -334,10 +349,10 @@
             <div class="logo-w pt-5">
               <img src="images/main-logo2.png" alt="">
             </div>
-            <div class="company pt-5">
-              <p>뉴탑보습학원</p>
-              <p>대표 <span>차민규</span></p>
-              <p>주소 <span>서울시 서초구 반포대로 21길 17 선업빌딩 3F </span></p>
+            <div class="company pt-5 pb-5">
+              <p class="font-nanum852">Copyrights 뉴탑학원 All Rights Reserved</p>
+              <p class="font-nanum500">서울시 서초구 반포대로 21길 17 선업빌딩 3F ☎(02)3472-3478</p>
+              <p class="font-nanum500">학원등록번호 제6403호 교습과정 : 학교교과교습학원(보습·논술) 사업자등록번호 897-97-00888 [원장 차민규]</p>
             </div>
           </footer>
         </div>

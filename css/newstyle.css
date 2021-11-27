@@ -1,3 +1,7 @@
+/* padding/margin option */
+html{
+    scroll-behavior: smooth;
+}
 .g-0{
     margin: 0;
     padding: 0;
@@ -17,6 +21,7 @@
 .pb-8{
     padding-bottom: 8%;
 }
+
 .pd-84{
     padding: 8% 0 4%;
 }
@@ -32,13 +37,109 @@
 .pd-106{
     padding: 10% 0 6%;
 }
+
+/* bg-color */
 .bg-lightblue{
     background: #e1ebec;
 }
 .bg-dgray{
     background: #e8e7e3;
 }
+.naver-icon{
+    font-size: 2rem;
+    vertical-align: middle;
+    color: #19ce60;
+}
 
+/* font option */
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-nanum600{
+    font-family: 'NanumSquareRound';
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.font-nanum852{
+    font-family: 'NanumSquareRound';
+    font-weight: 600;
+    font-size: 0.852rem;
+    color: #333;
+    margin: 0 !important;
+}
+.font-nanum500{
+    font-family: 'NanumSquareRound';
+    font-weight: 500;
+    font-size: 0.852rem;
+    color: #9ea1a4;
+    margin: 0 !important;
+}
+
+/* nav hover css */
+
+#nav-hover:hover{
+    color: rgb(89, 162, 180) !important;
+}
+
+/* floating menu */
+.relative{
+    position: relative;
+}
+.relative .floating img{
+    width: 3.5%;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, 585%);
+    box-shadow: 8px 8px 5px rgb(197, 197, 197);
+    border-radius: 50%;
+}
+@media(max-width:1024px) {
+    .relative .floating img{
+        width: 8%;
+        transform: translate(-23%, 635%);
+    }
+}
+@media(max-width:768px) {
+    .relative .floating img{
+        width: 9%;
+        transform: translate(-23%, 773%);
+    }
+}
+@media(max-width:540px) {
+    .relative .floating img{
+        width: 10%;
+        transform: translate(-23%, 550%);
+    }
+}
+@media(max-width:414px) {
+    .relative .floating img{
+        width: 12%;
+        transform: translate(-23%, 615%);
+    }
+}
+@media(max-width:375px) {
+    .relative .floating img{
+        width: 12%;
+        transform: translate(-23%, 777%);
+    }
+}
+@media(max-width:320px) {
+    .relative .floating img{
+        width: 14%;
+        transform: translate(-23%, 515%);
+    }
+}
+@media(max-width:280px) {
+    .relative .floating img{
+        width: 15%;
+        transform: translate(-23%, 660%);
+    }
+}
 
 /* main_banner */
 .img-box img{
@@ -80,6 +181,11 @@
     width: 100%;
     padding: 0 0 5%;
 }
+@media(max-width:767px){
+    .grade_tit img{
+        padding: 0 4% 5%;
+    }
+}
 .grade_teach img{
     width:100%;
     border: 2px solid #e1ebec;
@@ -100,14 +206,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 } */
-.section04img img:last-child{
+.section04img img{
     width: 100%;
 }
-@media (max-width:767px){
-    .sad-bg img{
-        padding: 2.188rem 0;
-    } 
-}
+
+
 /* section04 */
 
 .stop-fast-t img{
@@ -341,3 +444,7 @@ select::-ms-expand {
     color: black;
 }
 
+/* footer section */
+.footer .logo-w img{
+    width: 8%;
+}
