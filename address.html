@@ -131,12 +131,15 @@
         <div class="cotainer-fluid"> <div class="row g-0 relative"> <div
         class="col-sm-12 floating "> <a href="tel:02-3472-3479"><img
         src="images/phone.png" alt=""></a> </div> </div> </div>
+       
+       <!-- banner 영역 -->
+       
         <div class="container-fluid pd-001">
             <div class="row g-0">
                 <div class="col-12 g-0 relative">
                     <div class="main-banner relative">
                         <div class="absolute-text ">
-                            <div class="box-deco d-flex"></div>
+                        
                             <h2 class="font-barun25">시설안내 및 오시는길</h2>
                         </div>
                     </div>
@@ -146,12 +149,18 @@
 
             </div>
 
-            <div class="container-fluid">
+            
+            <!-- 학원시설 section -->
+
+            <div class="container-fluid bg-lightblue">
                 <div class="row g-0">
                     <div class="col-sm-2"></div>
-                    <div class="col-sm-8 pd-10">
-                        <div class="academy-inter-tit">
-                            <h1 class="text-center font-barun25bk">학원 시설</h1>
+                    <div class="col-md-8 pd-10">
+                        <div class="academy-inter-tit pb-8">
+                            <img src="images/academy.png" alt="">
+                        </div>
+                        <div class="academy-img d-flex">
+                            <img src="images/academyinterior.png" alt="">
                         </div>
                     </div>
                     <div class="col-sm-2"></div>
@@ -160,85 +169,97 @@
 
 
             <!-- 오시는길 SECtion -->
-            <div class="container-fluid pd-8">
+            
+            <div class="container-fluid bg-lightblue">
                 <div class="row g-0">
                     <div class="col-sm-2"></div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 g-0">
                         <div class="head-title pb-8">
-                            <h3 class="font-barun25bk text-center">오시는길</h3>
+                            <img src="images/come.png" alt="">
                         </div>
-                        <div class="col-12 d-flex mobile-column">
-                            <div class="col-md-6 vehicle col-sm-12">
+                        <div class="use-time">
+                            <div class="vehicle pb-7">
                                 <img src="images/vehicle.png" alt="">
-                            </div>
-                            <div class="col-md-6 map-wrap col-sm-12">
-                                <div id="map" class="map-newtop"></div>
-
-                                <script
-                                    type="text/javascript"
-                                    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3b51820de127432941df15233c757cc4"></script>
-                                <script>
-                                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-                                        mapOption = {
-                                            center: new kakao
-                                                .maps
-                                                .LatLng(37.48818176026174, 127.00856184079943), // 지도의 중심좌표
-                                            level: 3 // 지도의 확대 레벨
-                                        };
-
-                                    var map = new kakao
-                                        .maps
-                                        .Map(mapContainer, mapOption); // 지도를 생성합니다
-
-                                    // 마커가 표시될 위치입니다
-                                    var markerPosition = new kakao
-                                        .maps
-                                        .LatLng(37.48818176026174, 127.00856184079943);
-
-                                    // 마커를 생성합니다
-                                    var marker = new kakao
-                                        .maps
-                                        .Marker({position: markerPosition});
-
-                                    // 마커가 지도 위에 표시되도록 설정합니다
-                                    marker.setMap(map);
-
-                                </script>
-
-                            </div>
+                            </div> 
                         </div>
+                        <div class="map-wrap">
+                            <div id="map"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3b51820de127432941df15233c757cc4"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.48806257669983, 127.0085189254591), // 지도의 중심좌표
+        level: 1 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.48806257669983, 127.0085189254591); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);    
+</script>
+                        </div>
+                        <div class="open-hour pd-10">
+                            <img src="images/openhour.png" alt="" class="open-tit pb-8">
+                            <img src="images/영업시간.png" alt="" class="open-time-img">
+                            
+                        </div>
+                        
 
                     </div>
-                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2 col-1"></div>
 
                 </div>
             </div>
 
-            <!-- footer -->
-            <div class="container-fluid bg-lightblue footer">
+            
+            <div class="container-fluid">
                 <div class="row g-0">
                     <div class="col-sm-2"></div>
-                    <div class="col-md-8">
-                        <footer>
-                            <div class="logo-w pt-5">
-                                <img src="images/main-logo2.png" alt="">
-                            </div>
-                            <div class="company pt-5 pb-5">
-                                <p class="font-nanum852">Copyrights 뉴탑학원 All Rights Reserved</p>
-                                <p class="font-nanum500">서울시 서초구 반포대로 21길 17 선업빌딩 3F ☎(02)3472-3478</p>
-                                <p class="font-nanum500">학원등록번호 제6403호 교습과정 : 학교교과교습학원(보습·논술) 사업자등록번호 897-97-00888 [원장 차민규]</p>
-                            </div>
-                        </footer>
+                    <div class="col-sm-8 p-516">
+                        <div class="call-qna">
+                            <img src="images/문의-1.png" alt="">
+                            <img src="images/문의-2.png" alt="">
+                        </div>
+                       
                     </div>
                     <div class="col-sm-2"></div>
-
                 </div>
             </div>
 
-            <script src="js/yuul.js"></script>
-            <!-- <script src="js/map.js"></script> -->
-
+           <!-- footer -->
+    <div class="container-fluid bg-lightblue footer">
+        <div class="row g-0">
+          <div class="col-sm-2"></div>
+          <div class="col-md-8">
+            <footer>
+              <div class="logo-w pt-5">
+                <img src="images/main-logo2.png" alt="">
+              </div>
+              <div class="company pt-5 pb-5">
+                <p class="font-nanum852">Copyrights 뉴탑학원 All Rights Reserved</p>
+                <p class="font-nanum500">서울시 서초구 반포대로 21길 17 선업빌딩 3F ☎(02)3472-3478</p>
+                <p class="font-nanum500">학원등록번호 제6403호 사업자등록번호 897-97-00888 [대표이사 차민규]</p>
+              </div>
+            </footer>
+          </div>
+          <div class="col-sm-2"></div>
           
+        </div>
+      </div>
+
+            <script src="js/yuul.js"></script>        
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="js/main.js"></script>
 

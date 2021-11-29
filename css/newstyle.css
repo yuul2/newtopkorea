@@ -21,7 +21,12 @@ html{
 .pb-8{
     padding-bottom: 8%;
 }
-
+.ptb-5{
+    padding: 5% 0;
+}
+.p-516{
+    padding: 5% 0 16%;
+}
 .pd-84{
     padding: 8% 0 4%;
 }
@@ -37,7 +42,15 @@ html{
 .pd-106{
     padding: 10% 0 6%;
 }
-
+.pad-3{
+    padding: 3% 0 3% 3%;
+}
+.pdb-5{
+    padding-bottom: 5%;
+}
+.pb-7{
+    padding-bottom: 7%;
+}
 /* bg-color */
 .bg-lightblue{
     background: #e1ebec;
@@ -100,6 +113,12 @@ html{
     font-size: 0.852rem;
     color: #9ea1a4;
     margin: 0 !important;
+    word-break: keep-all;
+}
+@media(max-width:414px){
+    .font-nanum500{
+        font-size: 0.7rem;
+    }
 }
 .font-nanum25{
     font-family: 'NanumSquareRound';
@@ -139,7 +158,7 @@ html{
     right: 0;
     bottom: 0;
     transform: translate(-50%, -30%);
-    box-shadow: 8px 8px 5px rgb(197, 197, 197);
+    box-shadow: 5px 5px 5px rgb(197, 197, 197);
     border-radius: 50%;
 }
 @media(max-width:1024px) {
@@ -523,35 +542,70 @@ select::-ms-expand {
 }
 .main-banner .absolute-text{
     position: absolute;
-    z-index: 999;
+    z-index: 003;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    right: 50%;
+    transform: translate(50%,0%);
+}
+.absolute-text h2{
+    text-align: center;
+}
+@media(max-width:678px){
+    .main-banner .absolute-text{
+        transform: translate(50,0%);
+    }
 }
 
-.box-deco{
-    width: 4rem;
-    height: 5px;
-    background: #fff;
-    transform: translate(220%,-300%);
+
+
+/* 학원 이미지 */
+
+
+.academy-inter-tit img{
+    width: 20%;
 }
+.head-title img{
+    width: 20%;
+}
+.academy-img img{
+    width: 100%;
+}
+
+
 
 /* 오시는길  */
+.open-tit img{
+    width: 20%;
+}
+
 .vehicle img{
     width: 100%;
 }
+.opening-hour img{
+    width: 100%;
+}
+.map-wrap{
+    padding-top:5%;
+}
 .map-wrap #map{
     width: 100%;
-    height: 36.875rem;
+    height: 650px;
+}
+.open-tit{
+    width: 20%;
+}
+.open-time-img{
+    width: 100%;
 }
 
-@media(max-width:1020px){
-    .mobile-coulmn{
-        flex-direction: column;
-    }
-
-    .map-wrap #map{
-        width: 100%;
-        height: 590px;
-    }
+/* 문의하기 */
+.call-qna img{
+    width: 100%;
 }
+
+@media(max-width:768px){
+   .map-wrap #map{
+       height: 360px;
+   }
+}
+
